@@ -12,9 +12,20 @@ export default function Hero() {
         </h1>
 
 
-        <p className="font-semibold">The future is still so much bigger than the past.</p>
-        <div className="flex justify-around mt-16">
-          <button className="btn-hero">Projects</button><button className="btn-hero">Skills </button><button className="btn-hero">Contact</button>
+        <p className="font-semibold">Full-stack engineer building reliable, production web apps.</p>
+        <div className="flex justify-around mt-16 text-sm font-bold">
+          <span className="bg-primary-1050 shadow-md shadow-black/50 border border-sky-900/50 rounded-full px-4 leading-6 flex gap-x-2">
+            <i>X</i>
+            Frontend
+          </span>
+          <span className="bg-primary-1050 shadow-md shadow-black/50 border border-sky-900/50 rounded-full px-4 leading-6 flex gap-x-2">
+            <i>O</i>
+            Accessibility
+          </span>
+          <span className="bg-primary-1050 shadow-md shadow-black/50 border border-sky-900/50 rounded-full px-4 leading-6 flex gap-x-2">
+            <i>|</i>
+            Full-Stack
+          </span>
         </div>
       </div>
     </Section>

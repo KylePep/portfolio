@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-300: rgb(184, 230, 254);
 }
 
 @theme inline {
@@ -20,6 +21,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--background);
   background-image: url(https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=100&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
@@ -32,19 +37,58 @@ body {
   overflow-x: hidden;
 }
 
-.glass {
-  @apply bg-black/10 backdrop-blur-sm shadow-lg;
-}
 
-.btn-hero {
-  @apply px-6 border rounded-full font-medium bg-black/50 backdrop-blur-sm shadow-lg;
-}
 
 @layer utilities {
+  .nav-button {
+    padding: 8px 8px;
+    width: 100%;
+    border: 1px solid var(--primary-300);
+    border-width: 1px 0px;
+    flex: auto;
+    place-items: center;
+    text-align: center;
+  }
+
+  .nav-button:first-child {
+    padding: 8px;
+    border: 1px solid var(--primary-300);
+    border-width: 1px 0 1px 1px;
+    border-radius: 32px 0px 0px 32px;
+  }
+
+  .nav-button:last-child {
+    padding: 8px;
+    border: 1px solid var(--primary-300);
+    border-width: 1px 1px 1px 0px;
+    border-radius: 0 32px 32px 0;
+  }
+
+  .btn {
+    box-shadow: inset 0 0 0 0 rgba(184, 230, 254, 0);
+    transition: box-shadow .3s ease-in-out;
+  }
+
+  .btn:focus,
+  .btn:focus-visible,
+  .btn:hover {
+    box-shadow: inset 0 0 4px 2px rgba(184, 230, 254, 0.35);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
   .bg-about {
     background: radial-gradient(33.82% 46.83% at 50% 0%,
         rgba(126, 61, 255, 0.08) 0%,
         rgba(126, 61, 255, 0) 100%),
       rgb(1, 14, 22);
   }
+}
+
+.glass {
+  @apply bg-black/10 backdrop-blur-sm;
+}
+
+.btn-hero {
+  @apply px-6 leading-7 border border-sky-200 rounded-full font-medium bg-black/50 backdrop-blur-sm;
 }

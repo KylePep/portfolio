@@ -1,3 +1,4 @@
+import { CodeBracketIcon, ComputerDesktopIcon, HeartIcon } from "@heroicons/react/24/outline";
 import Button from "./Button";
 import "./Deck.css";
 import DeckCard from "./DeckCard";
@@ -9,7 +10,8 @@ export default function Deck() {
         <li className="card" id="card1">
           <DeckCard background="max-w-128 mx-auto">
             <div>
-              <h3 className="mb-2 text-lg font-bold">
+              <h3 className="flex gap-4 mb-2 text-lg font-bold">
+                <ComputerDesktopIcon className="h-8 w-8 my-auto text-sky-300" />
                 Frontend that actually ships
               </h3>
               <hr className="mb-4" />
@@ -22,7 +24,8 @@ export default function Deck() {
         <li className="card" id="card2">
           <DeckCard background="max-w-128 mx-auto">
             <div>
-              <h3 className="mb-2 text-lg font-bold">
+              <h3 className="flex gap-4 mb-2 text-lg font-bold">
+                <HeartIcon className="h-8 w-8 my-auto text-sky-300" />
                 Accessibility built in, not bolted on
               </h3>
               <hr className="mb-4" />
@@ -35,16 +38,14 @@ export default function Deck() {
         <li className="card" id="card3">
           <DeckCard background="max-w-128 mx-auto">
             <div>
-              <h3 className="mb-2 text-lg font-bold">
+              <h3 className="flex gap-4 mb-2 text-lg font-bold">
+                <CodeBracketIcon className="h-8 w-8 my-auto text-sky-300" />
                 More than just UI
               </h3>
               <hr className="mb-4" />
               <p>
                 I’m strongest on the frontend, but I understand the full stack—APIs, databases, and backend systems—so I can move faster and make better decisions across the whole app.
               </p>
-              {/* <div className="flex place-content-center">
-                <Button>Contact</Button>
-              </div> */}
             </div>
           </DeckCard>
         </li>

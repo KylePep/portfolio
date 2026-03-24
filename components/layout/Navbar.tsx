@@ -23,7 +23,7 @@ export default function Navbar() {
         className={`fixed bottom-16 z-50 flex place-content-center w-screen
                     transition-opacity duration-500`}
       >
-        <div className="w-100 flex justify-around glass text-xs rounded-full">
+        <div className="mx-4 w-100 flex justify-around glass text-xs rounded-full">
           <a href="#about-section" className="btn nav-button">About</a>
           <a href="#skills-section" className="btn nav-button">Skills</a>
           <a href="#projects-section" className="btn nav-button">Projects</a>

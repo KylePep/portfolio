@@ -8,9 +8,9 @@ export default function ProjectCard({
   onClick: () => void;
 }) {
   return (
-    <div
+    <button
       onClick={onClick}
-      className="cursor-pointer rounded-xl overflow-hidden border border-sky-950/50"
+      className="cursor-pointer rounded-xl overflow-hidden border border-sky-950/50 hover:-translate-y-2 duration-300"
     >
       <img src={project.heroImage} alt="" className="w-full h-48 object-cover" />
 
@@ -20,6 +20,6 @@ export default function ProjectCard({
           {project.description}
         </p>
       </div>
-    </div>
+    </button>
   );
 }

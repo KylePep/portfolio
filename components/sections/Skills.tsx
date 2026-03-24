@@ -4,41 +4,107 @@ import Container from "../ui/Container";
 const skills = [
   {
     title: "Frontend Development",
-    description:
-      "I build responsive, production-ready UIs using modern HTML, CSS, and JavaScript, with a focus on performance and maintainability.",
+    description: (
+      <>
+        <p className="mb-2">
+          Building responsive, production-ready UIs with modern frameworks and strong fundamentals.
+        </p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>React, Vue</li>
+          <li>JavaScript (ES6+), HTML, CSS</li>
+          <li>jQuery (legacy support)</li>
+          <li>Component-driven architecture</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    title: "Backend & Full-Stack",
+    description: (
+      <>
+        <p className="mb-2">
+          Supporting frontend development with APIs, server logic, and full-stack workflows.
+        </p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>PHP, Laravel</li>
+          <li>Node.js</li>
+          <li>.NET (working knowledge), C#</li>
+          <li>REST API design and integration</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    title: "Databases",
+    description: (
+      <>
+        <p className="mb-2">
+          Designing and querying data efficiently across relational and non-relational systems.
+        </p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>MySQL, PostgreSQL</li>
+          <li>MongoDB</li>
+          <li>SQL query writing and optimization</li>
+        </ul>
+      </>
+    ),
   },
   {
     title: "Accessibility",
-    description:
-      "Experienced with WCAG 2.1, Deque Axe, and Siteimprove. I’ve handled large-scale accessibility remediation across full sites.",
+    description: (
+      <>
+        <p className="mb-2">
+          Delivering accessible experiences and remediating issues across full sites.
+        </p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>WCAG 2.1 compliance</li>
+          <li>Deque Axe, Siteimprove</li>
+          <li>Accessibility audits and fixes</li>
+        </ul>
+      </>
+    ),
   },
   {
-    title: "WordPress & CMS",
-    description:
-      "Custom themes, plugin development, and working within existing CMS constraints while keeping code clean and structured.",
+    title: "CMS & Platforms",
+    description: (
+      <>
+        <p className="mb-2">
+          Working within CMS constraints while maintaining clean, scalable code.
+        </p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>WordPress (custom themes, plugins)</li>
+          <li>Bricks Builder</li>
+          <li>Vercel, Heroku</li>
+        </ul>
+      </>
+    ),
   },
   {
-    title: "Full-Stack",
-    description:
-      "Comfortable working with APIs, databases, and backend systems to support frontend work and unblock progress.",
-  },
-  {
-    title: "Debugging & Ownership",
-    description:
-      "I step into complex codebases, figure them out quickly, and take ownership to stabilize and deliver.",
-  },
-  {
-    title: "Performance",
-    description:
-      "Focused on fast turnaround, clean implementations, and shipping reliable features under real deadlines.",
+    title: "Tools & Workflow",
+    description: (
+      <>
+        <p className="mb-2">
+          Shipping reliably in team environments with strong ownership and process awareness.
+        </p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Git, Azure DevOps</li>
+          <li>Azure</li>
+          <li>Agile / Scrum</li>
+          <li>MVC architecture, environment parity</li>
+        </ul>
+      </>
+    ),
   },
 ];
 
 export default function Skills() {
   return (
-    <Section id="skills-section" background="relative bg-linear-to-b/srgb from-primary-1050 via-primary-1050/90 to-primary-1050">
-      <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent from-5% md:from-20% via-sky-300 to-transparent to-95% md:to-80%">
-      </div>
+    <Section
+      id="skills-section"
+      background="relative bg-linear-to-b/srgb from-primary-1050 via-primary-1050/90 to-primary-1050"
+    >
+      <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent from-5% md:from-20% via-sky-300 to-transparent to-95% md:to-80%" />
+
       <h2 className="text-3xl md:text-5xl font-bold text-center mb-4">
         Skills
       </h2>
@@ -50,15 +116,16 @@ export default function Skills() {
             key={skill.title}
             background={`
               p-6 rounded-xl border border-sky-950/50 flex-col
-              ${i === 0 || i === 3 ? "md:col-span-2" : ""}
+              hover:scale-102 hover:shadow-sm hover:shadow-sky-100/10 duration-300
+              ${i === 0 || i === 1 ? "md:col-span-2" : ""}
             `}
           >
             <h3 className="text-xl font-semibold mb-2">
               {skill.title}
             </h3>
-            <p className="text-sm opacity-80">
+            <div className="text-sm opacity-80">
               {skill.description}
-            </p>
+            </div>
           </Container>
         ))}
       </div>

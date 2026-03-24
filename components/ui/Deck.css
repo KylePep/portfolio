@@ -5,6 +5,20 @@
   --cardMargin: 4vw;
 }
 
+/* Smaller screens */
+@media (max-width: 768px) {
+  :root {
+    --cardHeight: 19rem;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 1200px) {
+  :root {
+    --cardHeight: 16rem;
+  }
+}
+
 #cards {
   list-style: none;
   padding-left: 0;

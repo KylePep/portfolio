@@ -43,17 +43,17 @@ export const projects: Project[] = [
   {
     id: "keepr",
     title: "Keepr",
-    description:
-      "Dragon ball themed clicker game.",
-    longDescription:
-      "Developing Keepr was an exciting experience focused on preserving memories. This web app lets users share and organize photos in customizable vaults, collaborating with friends to cherish special moments. Building Keepr improved my skills in C# and MySQL.",
+      description:
+    "Social media app for organizing and sharing user-generated content.",
+  longDescription:
+    "Keepr is a social media application built with a .NET backend in C# and a Vue.js frontend. It allows users to create, manage, and organize their own content, as well as collect and curate content from other users into personalized collections. This project strengthened my experience with full-stack development, particularly working with C#, RESTful APIs, and relational data modeling.",
     heroImage: "/projects/keepr/hero.png",
     images: [
       "/projects/keepr/1.png",
       "/projects/keepr/2.png",
       "/projects/keepr/3.png",
     ],
-        tech: ["Vue", "Express.js", "Node.js", "MySQL"],
+        tech: ["Vue.js", ".NET", "C#", "MySQL"],
   },
   {
     id: "saiyan-clicker",

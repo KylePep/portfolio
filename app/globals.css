@@ -23,6 +23,7 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -82,6 +83,36 @@ body {
         rgba(126, 61, 255, 0) 100%),
       rgb(1, 14, 22);
   }
+
+  /* WebKit browsers (Chrome, Edge, Safari) */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom,
+        rgba(56, 189, 248, 0.6),
+        rgba(56, 189, 248, 0.2));
+    backdrop-filter: blur(4px);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(56, 189, 248, 0.4);
+    /* sky-400-ish */
+    border-radius: 9999px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(56, 189, 248, 0.7);
+  }
+
+  /* Firefox */
+  .custom-scrollbar {
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(56, 189, 248, 0.4) transparent;
+  }
+
 }
 
 .glass {

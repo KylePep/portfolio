@@ -31,9 +31,9 @@ export default function About() {
         <div className="relative max-w-128 mx-auto my-16">
           <Square right={-5} top={100} rot={90} />
           <Square left={-5} top={-5} rot={270} />
-          <i>
+          {/* <i>
             <img className="h-16 w-16 mb-4" src="/kp-icon.png" alt="" />
-          </i>
+          </i> */}
           <p className="mb-6">
             Hey, I’m Kyle.
           </p>

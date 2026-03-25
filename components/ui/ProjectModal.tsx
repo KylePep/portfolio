@@ -95,7 +95,7 @@ export default function ProjectModal({
     >
       <div
         ref={modalRef}
-        className={`border border-sky-300/20 bg-radial-[at_50%_0%] from-sky-950 from-50% to-primary-1050 to-100%
+        className={`custom-scrollbar border border-sky-300/20 bg-radial-[at_50%_0%] from-sky-950 from-50% to-primary-1050 to-100%
           max-w-3xl w-full p-6 rounded-xl overflow-y-auto max-h-[90vh] mx-4
           transform transition-all duration-300 ease-out
           ${isOpen

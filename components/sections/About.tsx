@@ -18,7 +18,7 @@ export default function About() {
           <Square right={isMd ? 6 : -16} top={-8} rot={180} />
           <Square right={isMd ? 14 : -6} top={20} rot={270} />
           <Square right={isMd ? 22 : 2} top={46} rot={180} />
-          <h2 className="text-4xl md:text-6xl font-bold text-center leading-14 md:leading-24">Real <br className="md:hidden" /> Code. <br /> Real <br className="md:hidden" /> Impact.</h2>
+          <h2 className="text-4xl md:text-6xl font-bold text-center leading-14 md:leading-24">Systems <br className="md:hidden" /> Built. <br /> Problems <br className="md:hidden" /> Solved.</h2>
           <p className="text-center mt-6 max-w-2xl mx-auto">I work on production systems where reliability matters, handling frontend, accessibility, and whatever else it takes to get things done.</p>
         </div>
 
@@ -31,24 +31,29 @@ export default function About() {
         <div className="relative max-w-128 mx-auto my-16">
           <Square right={-5} top={100} rot={90} />
           <Square left={-5} top={-5} rot={270} />
+
           <p className="mb-6">
             Hey, I’m Kyle.
           </p>
 
           <p className="mb-6">
-            I’m a software engineer focused on frontend development, with experience building and maintaining production web applications for state government clients.
+            I’m a full-stack software engineer focused on building and maintaining reliable web applications.
           </p>
 
           <p className="mb-6">
-            Most of my work has involved stepping into complex or messy codebases, figuring them out quickly, and getting things back on track, whether that’s fixing frontend issues, improving accessibility, or rebuilding systems to be easier to work with.
+            Most of my professional experience has been maintaining and improving production systems for state government clients. I’ve owned features end-to-end in large, complex codebases, quickly learning how they work and extending them to be more stable and maintainable.
           </p>
 
           <p className="mb-6">
-            I care a lot about doing things the right way: clean structure, accessible UI, and code that other developers can actually understand and build on.
+            My work has spanned both frontend and backend responsibilities, including implementing UI features, working through API integrations, and addressing issues in data flow that impact how applications behave end-to-end.
           </p>
 
           <p className="mb-6">
-            I’m strongest on the frontend, but I’ve worked across the stack enough to be comfortable with APIs, databases, and backend systems when needed.
+            I care about building systems that are clean, predictable, and easy for other engineers to work in, with attention to both frontend usability and backend structure.
+          </p>
+
+          <p className="mb-6">
+            I’m comfortable working across the stack and tend to be most effective in roles where I can take ownership of features.
           </p>
 
           <p className="mb-6">

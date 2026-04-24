@@ -1,101 +1,197 @@
 import Section from "../ui/Section";
 import Container from "../ui/Container";
-
 const skills = [
+  {
+    title: "Backend & API Systems",
+    description: (
+      <>
+        <p className="mb-2">
+          Building and integrating backend systems that support production web applications, with a focus on data flow, API design, and system reliability.
+        </p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>.NET (C#), Node.js</li>
+          <li>REST API design and integration</li>
+          <li>API data transformation and consumption</li>
+          <li>MVC architecture</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    title: "Full-Stack Development",
+    description: (
+      <>
+        <p className="mb-2">
+          Delivering complete features across frontend and backend systems, including UI implementation, API integration, and production deployment workflows.
+        </p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Feature ownership across full application stack</li>
+          {/* <li>React, Vue, TypeScript</li> */}
+          <li>State-driven UI connected to backend services</li>
+          <li>Production deployment (Vercel, Azure, Heroku)</li>
+        </ul>
+      </>
+    ),
+  },
   {
     title: "Frontend Development",
     description: (
       <>
         <p className="mb-2">
-          Building responsive, production-ready UIs with modern frameworks and strong fundamentals.
+          Building component-based interfaces and maintaining frontend systems within larger production applications.
         </p>
         <ul className="list-disc pl-5 space-y-1">
           <li>React, Vue</li>
-          <li>JavaScript (ES6+), HTML, CSS</li>
-          <li>jQuery (legacy support)</li>
+          <li>JavaScript (ES6+), TypeScript, HTML, CSS, Tailwind</li>
           <li>Component-driven architecture</li>
+          <li>Legacy support (jQuery)</li>
         </ul>
       </>
     ),
   },
   {
-    title: "Backend & Full-Stack",
+    title: "Databases & Data Systems",
     description: (
       <>
         <p className="mb-2">
-          Supporting frontend development with APIs, server logic, and full-stack workflows.
+          Working with relational and NoSQL databases to support application data flow and backend logic.
         </p>
         <ul className="list-disc pl-5 space-y-1">
-          <li>PHP, Laravel</li>
-          <li>Node.js</li>
-          <li>.NET (working knowledge), C#</li>
-          <li>REST API design and integration</li>
+          <li>PostgreSQL, MySQL, MongoDB</li>
+          <li>SQL querying and data validation</li>
+          <li>Azure-hosted data interaction</li>
+          <li>Schema usage within application systems</li>
         </ul>
       </>
     ),
   },
   {
-    title: "Databases",
+    title: "Accessibility & Quality",
     description: (
       <>
         <p className="mb-2">
-          Designing and querying data efficiently across relational and non-relational systems.
-        </p>
-        <ul className="list-disc pl-5 space-y-1">
-          <li>MySQL, PostgreSQL</li>
-          <li>MongoDB</li>
-          <li>SQL query writing and optimization</li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    title: "Accessibility",
-    description: (
-      <>
-        <p className="mb-2">
-          Delivering accessible experiences and remediating issues across full sites.
+          Improving usability and resolving accessibility issues across production systems.
         </p>
         <ul className="list-disc pl-5 space-y-1">
           <li>WCAG 2.1 compliance</li>
           <li>Deque Axe, Siteimprove</li>
-          <li>Accessibility audits and fixes</li>
+          <li>Large-scale accessibility remediation</li>
         </ul>
       </>
     ),
   },
   {
-    title: "CMS & Platforms",
+    title: "Tools & Delivery",
     description: (
       <>
         <p className="mb-2">
-          Working within CMS constraints while maintaining clean, scalable code.
-        </p>
-        <ul className="list-disc pl-5 space-y-1">
-          <li>WordPress (custom themes, plugins)</li>
-          <li>Bricks Builder</li>
-          <li>Vercel, Heroku</li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    title: "Tools & Workflow",
-    description: (
-      <>
-        <p className="mb-2">
-          Shipping reliably in team environments with strong ownership and process awareness.
+          Working in production environments with modern tooling and collaborative development workflows.
         </p>
         <ul className="list-disc pl-5 space-y-1">
           <li>Git, Azure DevOps</li>
-          <li>Azure</li>
-          <li>Agile / Scrum</li>
-          <li>MVC architecture, environment parity</li>
+          <li>Azure, Vercel, Heroku</li>
+          <li>Agile / Scrum workflows</li>
+          <li>Debugging, QA collaboration</li>
         </ul>
       </>
     ),
-  },
-];
+  }
+]
+// const skillsz = [
+//   {
+//     title: "Frontend Development",
+//     description: (
+//       <>
+//         <p className="mb-2">
+//           Building responsive, production-ready UIs with modern frameworks and strong fundamentals.
+//         </p>
+//         <ul className="list-disc pl-5 space-y-1">
+//           <li>React, Vue</li>
+//           <li>JavaScript (ES6+), HTML, CSS</li>
+//           <li>jQuery (legacy support)</li>
+//           <li>Component-driven architecture</li>
+//         </ul>
+//       </>
+//     ),
+//   },
+//   {
+//     title: "Backend & Full-Stack",
+//     description: (
+//       <>
+//         <p className="mb-2">
+//           Supporting frontend development with APIs, server logic, and full-stack workflows.
+//         </p>
+//         <ul className="list-disc pl-5 space-y-1">
+//           <li>PHP, Laravel</li>
+//           <li>Node.js</li>
+//           <li>.NET (working knowledge), C#</li>
+//           <li>REST API design and integration</li>
+//         </ul>
+//       </>
+//     ),
+//   },
+//   {
+//     title: "Databases",
+//     description: (
+//       <>
+//         <p className="mb-2">
+//           Designing and querying data efficiently across relational and non-relational systems.
+//         </p>
+//         <ul className="list-disc pl-5 space-y-1">
+//           <li>MySQL, PostgreSQL</li>
+//           <li>MongoDB</li>
+//           <li>SQL query writing and optimization</li>
+//         </ul>
+//       </>
+//     ),
+//   },
+//   {
+//     title: "Accessibility",
+//     description: (
+//       <>
+//         <p className="mb-2">
+//           Delivering accessible experiences and remediating issues across full sites.
+//         </p>
+//         <ul className="list-disc pl-5 space-y-1">
+//           <li>WCAG 2.1 compliance</li>
+//           <li>Deque Axe, Siteimprove</li>
+//           <li>Accessibility audits and fixes</li>
+//         </ul>
+//       </>
+//     ),
+//   },
+//   {
+//     title: "CMS & Platforms",
+//     description: (
+//       <>
+//         <p className="mb-2">
+//           Working within CMS constraints while maintaining clean, scalable code.
+//         </p>
+//         <ul className="list-disc pl-5 space-y-1">
+//           <li>WordPress (custom themes, plugins)</li>
+//           <li>Bricks Builder</li>
+//           <li>Vercel, Heroku</li>
+//         </ul>
+//       </>
+//     ),
+//   },
+//   {
+//     title: "Tools & Workflow",
+//     description: (
+//       <>
+//         <p className="mb-2">
+//           Shipping reliably in team environments with strong ownership and process awareness.
+//         </p>
+//         <ul className="list-disc pl-5 space-y-1">
+//           <li>Git, Azure DevOps</li>
+//           <li>Azure</li>
+//           <li>Agile / Scrum</li>
+//           <li>MVC architecture, environment parity</li>
+//         </ul>
+//       </>
+//     ),
+//   },
+// ];
 
 export default function Skills() {
   return (

@@ -1,4 +1,4 @@
-import { CodeBracketIcon, ComputerDesktopIcon, HeartIcon } from "@heroicons/react/24/solid";
+import { CodeBracketIcon, Cog6ToothIcon, ComputerDesktopIcon, HeartIcon } from "@heroicons/react/24/solid";
 import Section from "../ui/Section";
 
 export default function Hero() {
@@ -16,16 +16,16 @@ export default function Hero() {
         <p className="font-semibold">Full-stack engineer building reliable, production web apps.</p>
         <div className="flex flex-col md:flex-row gap-8 md:gap-4 justify-around mt-16 text-sm font-bold">
           <span className="bg-primary-1050 shadow-md shadow-black/50 border border-sky-900/50 rounded-full px-4 leading-6 flex gap-x-2 mx-auto">
-            <ComputerDesktopIcon className="h-4 w-4 my-auto text-sky-300" />
-            Frontend
-          </span>
-          <span className="bg-primary-1050 shadow-md shadow-black/50 border border-sky-900/50 rounded-full px-4 leading-6 flex gap-x-2 mx-auto">
-            <HeartIcon className="h-4 w-4 my-auto text-sky-300" />
-            Accessibility
-          </span>
-          <span className="bg-primary-1050 shadow-md shadow-black/50 border border-sky-900/50 rounded-full px-4 leading-6 flex gap-x-2 mx-auto">
             <CodeBracketIcon className="h-4 w-4 my-auto text-sky-300" />
-            Full-Stack
+            Backend Systems
+          </span>
+          <span className="bg-primary-1050 shadow-md shadow-black/50 border border-sky-900/50 rounded-full px-4 leading-6 flex gap-x-2 mx-auto">
+            <Cog6ToothIcon className="h-4 w-4 my-auto text-sky-300" />
+            API Design
+          </span>
+          <span className="bg-primary-1050 shadow-md shadow-black/50 border border-sky-900/50 rounded-full px-4 leading-6 flex gap-x-2 mx-auto">
+            <ComputerDesktopIcon className="h-4 w-4 my-auto text-sky-300" />
+            Full-Stack Delivery
           </span>
         </div>
       </div>

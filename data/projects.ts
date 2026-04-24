@@ -25,22 +25,7 @@ export const projects: Project[] = [
     ],
     tech: ["Vue", "Laravel", "PostgreSQL", "Tailwind"],
   },
-  {
-    id: "world-war-dragon",
-    title: "World War Dragon",
-    description:
-      "Cooperative online game with shared progression and persistent state.",
-    longDescription:
-      "Built with Vue, .NET, Node.js, and MongoDB. Designed backend systems and data models to support shared world state across players. Implemented pseudo-multiplayer through persistent data instead of real-time networking.",
-    heroImage: "/projects/dragon/hero.png",
-    images: [
-      "/projects/dragon/1.png",
-      "/projects/dragon/2.png",
-      "/projects/dragon/3.png",
-    ],
-    tech: ["Vue", ".NET", "Node.js", "MongoDB", "PhaserJS"],
-  },
-  {
+    {
     id: "keepr",
     title: "Keepr",
       description:
@@ -54,6 +39,21 @@ export const projects: Project[] = [
       "/projects/keepr/3.png",
     ],
         tech: ["Vue.js", ".NET", "C#", "MySQL"],
+  },
+  {
+    id: "world-war-dragon",
+    title: "World War Dragon",
+    description:
+      "Cooperative online game with shared progression and persistent state.",
+    longDescription:
+      "Built with Vue, .NET, Node.js, and MongoDB. Designed backend systems and data models to support shared world state across players. Implemented pseudo-multiplayer through persistent data instead of real-time networking.",
+    heroImage: "/projects/dragon/hero.png",
+    images: [
+      "/projects/dragon/1.png",
+      "/projects/dragon/2.png",
+      "/projects/dragon/3.png",
+    ],
+    tech: ["Vue", "Node.js", "MongoDB", "PhaserJS"],
   },
   {
     id: "saiyan-clicker",

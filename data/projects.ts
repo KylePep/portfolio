@@ -10,6 +10,22 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "partyup",
+    title: "PartyUp",
+    description:
+      "Tinder-style matchmaking platform for multiplayer gamers. Swipe on characters, not just people.",
+    longDescription:
+      "PartyUp is a full-stack swipe-based matchmaking app where gamers build per-game character profiles and find teammates through mutual interest. Built as a monorepo with an ASP.NET Core 8 REST API and a React + TypeScript frontend. Features JWT authentication, BCrypt password hashing, and real-time game search powered by the RAWG.io API. The data model centers on a character-first design: users create characters tied to specific games, swipe on others' characters, and mutual likes form a match. EF Core manages the relational PostgreSQL schema, including a self-referencing CharacterInteraction table and a deduplicated CharacterMatch table using consistent GUID ordering to prevent duplicate match rows. Deployed with Docker for the database layer.",
+    heroImage: "/projects/partyup/hero.png",
+    images: [
+      "/projects/partyup/1.png",
+      "/projects/partyup/2.png",
+      "/projects/partyup/3.png",
+      "/projects/partyup/4.png",
+    ],
+    tech: ["React", "TypeScript", "ASP.NET Core", "C#", "PostgreSQL", "EF Core", "Docker", "JWT", "RAWG.io API"],
+  },
+  {
     id: "calorie-counter",
     title: "Calorie Counter",
     description:

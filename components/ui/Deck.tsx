@@ -16,7 +16,7 @@ export default function Deck() {
               </h3>
               <hr className="mb-4" />
               <p>
-                I’ve worked inside large production systems for state government clients, where stability and maintainability matter. My work has involved understanding existing system behavior quickly and improving it without breaking production flows.
+                I design and build backend systems end-to-end, from greenfield projects with full auth pipelines, third-party API integration, and non-trivial relational schemas, to maintaining and extending large production systems for state government clients without breaking existing flows.
               </p>
             </div>
           </DeckCard>

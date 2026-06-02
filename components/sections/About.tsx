@@ -49,6 +49,10 @@ export default function About() {
           </p>
 
           <p className="mb-6">
+            Outside of client work, I've built complete full-stack applications from scratch. Most recently a matchmaking platform with a full auth system, third-party API integration, and a purpose-built relational schema. These projects give me direct ownership over architectural decisions I don't always get to make in production environments.
+          </p>
+
+          <p className="mb-6">
             I care about building systems that are clean, predictable, and easy for other engineers to work in, with attention to both frontend usability and backend structure.
           </p>
 

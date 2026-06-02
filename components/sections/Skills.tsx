@@ -6,12 +6,13 @@ const skills = [
     description: (
       <>
         <p className="mb-2">
-          Building and integrating backend systems that support production web applications, with a focus on data flow, API design, and system reliability.
+          Building backend systems from greenfield to production, covering full auth pipelines, REST API design, and third-party integrations across both personal and client work.
         </p>
         <ul className="list-disc pl-5 space-y-1">
-          <li>.NET (C#), Node.js</li>
-          <li>REST API design and integration</li>
-          <li>API data transformation and consumption</li>
+          <li>ASP.NET Core (C#), Node.js, Laravel (PHP)</li>
+          <li>REST API design: routing, auth middleware, data contracts</li>
+          <li>JWT authentication & BCrypt password hashing</li>
+          <li>Third-party API integration (RAWG.io, USDA FoodData)</li>
           <li>MVC architecture</li>
         </ul>
       </>
@@ -54,13 +55,14 @@ const skills = [
     description: (
       <>
         <p className="mb-2">
-          Working with relational and NoSQL databases to support application data flow and backend logic.
+          Designing and working with relational and NoSQL databases across production and greenfield systems.
         </p>
         <ul className="list-disc pl-5 space-y-1">
           <li>PostgreSQL, MySQL, MongoDB</li>
+          <li>EF Core: code-first schema design, migrations</li>
+          <li>Non-trivial schema design (self-referencing tables, deduplication patterns)</li>
           <li>SQL querying and data validation</li>
           <li>Azure-hosted data interaction</li>
-          <li>Schema usage within application systems</li>
         </ul>
       </>
     ),
@@ -89,6 +91,7 @@ const skills = [
         </p>
         <ul className="list-disc pl-5 space-y-1">
           <li>Git, Azure DevOps</li>
+          <li>Docker</li>
           <li>Azure, Vercel, Heroku</li>
           <li>Agile / Scrum workflows</li>
           <li>Debugging, QA collaboration</li>

@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Project } from "@/data/projects";
 import { XMarkIcon } from "@heroicons/react/24/solid";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 export default function ProjectModal({
   project,
@@ -117,9 +118,26 @@ export default function ProjectModal({
           className="mb-4"
         />
 
-        <h2 id="modal-title" className="text-2xl font-bold">
-          {project.title}
-        </h2>
+        <div className="flex items-center justify-between gap-4 flex-wrap">
+          <h2 id="modal-title" className="text-2xl font-bold">
+            {project.title}
+          </h2>
+          {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-sm text-sky-300 hover:text-sky-100 transition-colors duration-200 shrink-0"
+            >
+              View Live
+              <ArrowTopRightOnSquareIcon className="h-4 w-4" />
+            </a>
+          )}
+        </div>
+
+        {project.liveNote && (
+          <p className="text-xs text-white/40 mt-1 mb-3">{project.liveNote}</p>
+        )}
 
         <hr className="mb-4" />
 

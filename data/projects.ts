@@ -6,6 +6,8 @@ export type Project = {
   heroImage: string;
   images: string[];
   tech: string[];
+  liveUrl?: string;
+  liveNote?: string;
 };
 
 export const projects: Project[] = [
@@ -24,6 +26,7 @@ export const projects: Project[] = [
       "/projects/partyup/4.png",
     ],
     tech: ["React", "TypeScript", "ASP.NET Core", "C#", "PostgreSQL", "EF Core", "Docker", "JWT", "RAWG.io API"],
+    liveUrl: "https://partyup.kylepep.dev/",
   },
   {
     id: "calorie-counter",
@@ -70,6 +73,8 @@ export const projects: Project[] = [
       "/projects/dragon/3.png",
     ],
     tech: ["Vue", "Node.js", "MongoDB", "PhaserJS"],
+    liveUrl: "https://world-war-dragon.onrender.com/",
+    liveNote: "Hosted on Render's free tier — may take up to a minute to wake up.",
   },
   {
     id: "saiyan-clicker",
@@ -85,5 +90,6 @@ export const projects: Project[] = [
       "/projects/saiyan/3.png",
     ],
     tech: ["HTML", "CSS", "JS"],
+    liveUrl: "https://kylepep.github.io/saiyanClicker/#",
   },
 ];

@@ -15,9 +15,9 @@ export const projects: Project[] = [
     id: "partyup",
     title: "PartyUp",
     description:
-      "Tinder-style matchmaking platform for multiplayer gamers. Swipe on characters, not just people.",
+        "Full-stack SaaS matchmaking platform for multiplayer gaming built around structured character-based data models and API-driven UI.",
     longDescription:
-      "PartyUp is a full-stack swipe-based matchmaking app where gamers build per-game character profiles and find teammates through mutual interest. Built as a monorepo with an ASP.NET Core 8 REST API and a React + TypeScript frontend. Features JWT authentication, BCrypt password hashing, and real-time game search powered by the RAWG.io API. The data model centers on a character-first design: users create characters tied to specific games, swipe on others' characters, and mutual likes form a match. EF Core manages the relational PostgreSQL schema, including a self-referencing CharacterInteraction table and a deduplicated CharacterMatch table using consistent GUID ordering to prevent duplicate match rows. Deployed with Docker for the database layer.",
+  "PartyUp is a full-stack SaaS web application that implements a data-driven matchmaking system for multiplayer games. The platform is built with an ASP.NET Core 8 REST API, PostgreSQL, EF Core, and a React + TypeScript frontend. The core architecture centers on a structured, character-based data model where users create game-specific character profiles derived from external game metadata via the RAWG.io API. These structured profiles are normalized into relational database entities that support efficient querying and matching. The backend implements JWT authentication, BCrypt password hashing, and a relational schema designed around interaction tracking and deduplicated match generation. This includes a self-referencing CharacterInteraction table for user actions and a CharacterMatch table that enforces deterministic GUID ordering to prevent duplicate match records. The frontend is a React + TypeScript SPA that consumes REST APIs and renders dynamic, data-driven UI flows based on game-specific metadata and user-defined character attributes. The system is containerized with Docker and deployed as a full-stack SaaS application.",
     heroImage: "/projects/partyup/hero.png",
     images: [
       "/projects/partyup/1.png",
@@ -25,7 +25,18 @@ export const projects: Project[] = [
       "/projects/partyup/3.png",
       "/projects/partyup/4.png",
     ],
-    tech: ["React", "TypeScript", "ASP.NET Core", "C#", "PostgreSQL", "EF Core", "Docker", "JWT", "RAWG.io API"],
+    tech: [
+  "React",
+  "TypeScript",
+  "ASP.NET Core",
+  "C#",
+  "PostgreSQL",
+  "EF Core",
+  "REST API Design",
+  "JWT Authentication",
+  "Docker",
+  "RAWG.io API"
+],
     liveUrl: "https://partyup.kylepep.dev/",
   },
   {
